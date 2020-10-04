@@ -1,0 +1,125 @@
+@-webkit-keyframes bx {
+	0% {
+		margin-top: 0;
+	}
+	50% {
+		margin-top: 50px;
+	}
+	80% {
+		margin-left: 600px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+@-webkit-keyframes ci {
+	0% {
+		margin-left: 0;
+	}
+	50% {
+		margin-left: 100px;
+	}
+	80% {
+		margin-left: 200px;
+	}
+	100% {
+		margin-top: 0;
+	}
+}
+
+.box{
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	animation-name: bx;
+	animation-duration: 7s;
+}
+
+.box2{
+	width: 100px;
+	height: 100px;
+	background-color: yellow;
+
+	transition-property: background-color;
+	transition-duration: 3s;
+
+	animation-name: bx;
+	animation-duration: 6s;
+}
+
+.box3{
+	width: 100px;
+	height: 100px;
+	background-color: green;
+
+	transition-property: transform, background-color;
+	transition-duration: 3s;
+
+	animation-name: bx;
+	animation-duration: 5s;
+}
+
+.box:hover{
+	background-color: yellow;
+}
+
+.box2:hover{
+	background-color: green;
+}
+
+.box3:hover{
+	transform: rotate(360deg);
+	background-color: blue;
+}
+
+.circle{
+	width:100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: red;
+
+	animation-name: ci;
+	animation-duration: 4s;
+
+	transition-property: transform, background-color;
+	transition-duration: 3s;
+
+}
+
+.circle2{
+	width:100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: orange;
+
+	animation-name: ci;
+	animation-duration: 4s;
+
+	transition-property: transform, background-color;
+	transition-duration: 3s;
+}
+
+.circle3{
+	width:100px;
+	height: 100px;
+	border-radius: 50px;
+	background-color: purple;
+
+	animation-name: ci;
+	animation-duration: 4s;
+
+	transition-property: transform, background-color;
+	transition-duration: 3s;
+}
+
+.circle:hover{
+	background-color: purple;
+}
+
+.circle2:hover{
+	background-color: red;
+}
+
+.circle3:hover{
+	background-color: orange;
+}
